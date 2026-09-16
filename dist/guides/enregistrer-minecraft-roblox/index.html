@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enregistrer Minecraft et Roblox sans faire ramer son PC</title>
+<meta name="description" content="Réglages d'enregistrement pour Minecraft et Roblox quand le PC est limité : encodeur, résolution, débit, audio et erreurs fréquentes.">
+<link rel="canonical" href="https://loderplayz.github.io/guides/enregistrer-minecraft-roblox">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kyro – LoderPlayz">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Enregistrer Minecraft et Roblox sans faire ramer son PC">
+<meta property="og:description" content="Réglages d'enregistrement pour Minecraft et Roblox quand le PC est limité : encodeur, résolution, débit, audio et erreurs fréquentes.">
+<meta property="og:url" content="https://loderplayz.github.io/guides/enregistrer-minecraft-roblox">
+<meta property="og:image" content="https://loderplayz.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Enregistrer Minecraft et Roblox sans faire ramer son PC">
+<meta name="twitter:description" content="Réglages d'enregistrement pour Minecraft et Roblox quand le PC est limité : encodeur, résolution, débit, audio et erreurs fréquentes.">
+<meta name="twitter:image" content="https://loderplayz.github.io/assets/og.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter+Tight:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://loderplayz.github.io/guides/enregistrer-minecraft-roblox#article",
+   "headline": "Enregistrer Minecraft et Roblox sans faire ramer son PC",
+   "author": {
+    "@id": "https://loderplayz.github.io/kyro#person"
+   },
+   "publisher": {
+    "@id": "https://loderplayz.github.io/kyro#person"
+   },
+   "inLanguage": "fr",
+   "dateModified": "2026-09-16",
+   "mainEntityOfPage": "https://loderplayz.github.io/guides/enregistrer-minecraft-roblox",
+   "about": [
+    {
+     "@type": "VideoGame",
+     "name": "Minecraft"
+    },
+    {
+     "@type": "VideoGame",
+     "name": "Roblox"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://loderplayz.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Enregistrer sans lag",
+     "item": "https://loderplayz.github.io/guides/enregistrer-minecraft-roblox"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top">
+  <a class="mark" href="/"><span>KY</span><span>RO</span></a>
+  <nav aria-label="Navigation principale">
+    <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/kyro">Kyro</a></li>
+        <li><a href="/loderplayz">LoderPlayz</a></li>
+        <li><a href="/videos">Vidéos</a></li>
+        <li><a href="/shorts">Shorts</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/about">À propos</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+
+<article class="prose">
+<h1>Enregistrer Minecraft et Roblox sans faire ramer son PC</h1>
+<p>C'est la question qui revient le plus souvent en commentaire. Le problème n'est
+presque jamais le logiciel de capture&nbsp;: c'est le fait de demander au processeur
+de faire tourner le jeu <em>et</em> de compresser la vidéo en même temps.</p>
+
+<h2>Utiliser l'encodeur de la carte graphique</h2>
+<p>Dans OBS, l'encodeur par défaut (x264) travaille sur le processeur, celui qui fait
+déjà tourner Minecraft. Si la machine a un GPU NVIDIA, AMD récent ou un Intel avec
+Quick Sync, l'encodeur matériel correspondant (NVENC, AMF, QSV) libère presque
+entièrement le processeur. C'est le seul réglage qui change tout le reste&nbsp;;
+à faire avant de toucher à quoi que ce soit d'autre.</p>
+
+<h2>Choisir la résolution avant le débit</h2>
+<p>Enregistrer en 1080p à 60&nbsp;images par seconde demande beaucoup plus de travail
+qu'en 1080p à 30. Sur une machine juste, mieux vaut du 1080p30 net que du 1080p60 qui
+saccade&nbsp;: une vidéo qui saute est plus désagréable à regarder qu'une vidéo à 30&nbsp;fps.
+Pour les Shorts, l'image finale est verticale&nbsp;: enregistrer en 1080p horizontal et
+recadrer au montage laisse plus de marge que de capturer directement en vertical.</p>
+
+<h2>Ne pas confondre débit d'enregistrement et débit de live</h2>
+<p>Pour un fichier gardé en local, il n'y a pas de limite d'upload&nbsp;: un débit
+généreux, ou un mode à qualité constante, évite le flou dans les scènes qui bougent
+beaucoup — typiquement une course en Roblox ou une explosion en Minecraft. Compresser
+fort n'a d'intérêt qu'en direct.</p>
+
+<h2>Séparer les pistes audio</h2>
+<p>Enregistrer le jeu, le micro et la musique sur des pistes séparées prend le même
+temps sur le moment et sauve le montage&nbsp;: on peut baisser la musique sous une
+réplique sans toucher au reste. Avec une seule piste, c'est impossible.</p>
+
+<h2>Les erreurs qui coûtent le plus</h2>
+<ul>
+  <li>Capturer l'écran entier au lieu de la fenêtre du jeu&nbsp;: plus lourd, et on
+      enregistre ses notifications.</li>
+  <li>Écrire le fichier sur le même disque que le jeu quand il s'agit d'un disque dur
+      mécanique&nbsp;: des images perdues en pleine partie.</li>
+  <li>Laisser le navigateur et une dizaine d'onglets ouverts pendant l'enregistrement.</li>
+  <li>Découvrir après trois heures de jeu que le micro n'était pas branché. Tester
+      trente secondes et réécouter, chaque fois.</li>
+</ul>
+
+<h2>Vérifier avant de lancer la vraie session</h2>
+<p>Un test de deux minutes, puis on regarde le fichier&nbsp;: image fluide, son présent
+sur les deux pistes, pas d'images perdues dans les statistiques d'OBS. Si quelque chose
+cloche, c'est maintenant qu'on le corrige, pas après.</p>
+
+<p>Une question sur un réglage précis&nbsp;? Le
+<a href="/contact">contact</a> et le Discord sont là pour ça.</p>
+</article>
+
+</main>
+<footer class="foot">
+  <p><strong>Kyro</strong> — aussi connu sous <strong>LoderPlayz</strong> (@LoderPlayz).
+     Chaîne&nbsp;: <a href="https://www.youtube.com/@LoderPlayz" rel="me">youtube.com/@LoderPlayz</a> ·
+     Communauté&nbsp;: <a href="https://discord.gg/GH9ekm5JC" rel="nofollow noopener">Discord</a></p>
+  <p class="fine">Site officiel. Dernière mise à jour&nbsp;: 2026-09-16.
+     Minecraft et Roblox sont des marques de leurs détenteurs respectifs&nbsp;;
+     ce site n'est ni affilié ni approuvé par eux.</p>
+</footer>
+</body>
+</html>

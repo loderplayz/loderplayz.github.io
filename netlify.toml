@@ -1,0 +1,8 @@
+# Alternative a GitHub Pages : Netlify ou Cloudflare Pages
+[build]
+  command = "python3 build.py && python3 check.py"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+  KYRO_BASE_URL = "https://loderplayz.github.io"
