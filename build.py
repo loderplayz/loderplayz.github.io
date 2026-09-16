@@ -18,6 +18,7 @@ HANDLE       = "@LoderPlayz"
 CHANNEL_URL  = "https://www.youtube.com/" + HANDLE
 DISCORD_URL  = "https://discord.gg/GH9ekm5JC"       # tiré de la bio du canal
 BUILD_DATE   = datetime.date.today().isoformat()
+GOOGLE_SITE_VERIFICATION = "KqK9Z-eARJZd05o4vdJW1w91Tl3vUuM95PAhQU5QRxY"
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dist")
 
@@ -106,6 +107,7 @@ def render(page):
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">
 <meta property="og:type" content="{page.get('og_type','website')}">
 <meta property="og:site_name" content="Kyro – LoderPlayz">
 <meta property="og:locale" content="fr_FR">
